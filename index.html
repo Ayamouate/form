@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <h1>Form</h1>
+        <div id="form-container">
+            <form id="form">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email">
+            <span id="spemail"></span>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" placeholder="+212 xxx-xxx-xxx">
+            <span id="sphone"></span>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" placeholder="Enter a date">
+            <span id="spdate"></span>
+
+            <label for="message">Message:</label>
+            <input type="text" id="message" placeholder="Send me a message" ></input>
+            <span id="sptext"></span>
+            </form>
+        <button type="submit" onclick="affichage();">Submit</button>
+        </div> 
+        <div id="popupContainer"></div>
+    <script src="main.js"></script>
+</body>
+</html>

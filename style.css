@@ -1,0 +1,93 @@
+body{
+    background-image: url(BBBB.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    padding: 0 10% ;
+}
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#form-container {
+    width: 95%;
+    height: 570px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 5px solid #ccc;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+input[type="tel"],
+input[type="email"],
+input[type="date"]{
+    width: 95%;
+    padding: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+input[type="text"]{
+    width: 95%;
+    height: 100px;
+    padding: 20px;
+    border-radius: 10px;
+}
+#spemail,
+#sphone, 
+#spdate, 
+#sptext{
+    color: rgb(244, 10, 10);
+}
+button[type="submit"] {
+    width: 95%;
+    margin: 20px;
+    padding: 15px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: 1px solid #0000;
+    border-radius: 10px;
+    cursor: pointer;
+}
+button:hover {
+    opacity: 0.8;
+}
+
+/* Popup content */
+.popup {
+    position: fixed;
+    width: 50%;
+    height: 300px;
+    margin: 15px;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Close button */
+.popup button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Style for the form container on mobile devices */
+@media (max-width: 480px) {
+    #contact-form {
+      width: 100%;
+    }
+}
