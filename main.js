@@ -20,11 +20,11 @@ function affichage() {
         testemail.innerHTML = "";
     }
     // Validating phone number
-    var regexPhone = /^\+212 \d{3}-\d{3}-\d{3}$/;
+    var regexPhone = /^(?:\+212|0)([5-7]\d{8})$/;
     if (phoneInput == "") {
         testphone.innerHTML = "*Phone is required";
     } else if (!regexPhone.test(phoneInput)) {
-        testphone.innerHTML = "*Phone number should be in this foum +212 xxx-xxx-xxx";
+        testphone.innerHTML = "*Phone number should be in this foum '+212' or '0' and 9 digits ";
     } else {
         testphone.innerHTML = "";
     }
